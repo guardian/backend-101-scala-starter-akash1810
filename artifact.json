@@ -1,0 +1,21 @@
+{
+  "projectName": "devx::backend-101-akash1810",
+  "vcsURL": "https://github.com/guardian/backend-101-scala-starter-akash1810",
+  "actions": [
+    {
+      "action": "cdk.out",
+      "path": "cdk/cdk.out",
+      "compress": false
+    },
+    {
+      "action": "backend-101-scala-starter-akash1810",
+      "path": "app.service",
+      "compress": false
+    },
+    {
+      "action": "backend-101-scala-starter-akash1810",
+      "path": "target/scala-2.13/hello-world.jar",
+      "compress": false
+    }
+  ]
+}
