@@ -1,10 +1,13 @@
 import 'source-map-support/register';
-import { GuRoot } from '@guardian/cdk/lib/constructs/root';
-import { Backend101ScalaStarterAkash1810 } from '../lib/backend-101-scala-starter-akash-1810';
+import { GuRootExperimental } from '@guardian/cdk/lib/experimental/constructs';
+import { DistrolessContainerExperiments } from '../lib/fargate';
 
-const app = new GuRoot();
-new Backend101ScalaStarterAkash1810(
-	app,
-	'Backend101ScalaStarterAkash1810-PROD',
-	{ stack: 'deploy', stage: 'PROD' },
-);
+const app = new GuRootExperimental();
+
+new DistrolessContainerExperiments(app, 'DistrolessContainerExperiments', {
+	stack: 'playground',
+	stage: 'CODE',
+	env: {
+		region: 'eu-west-1',
+	},
+});

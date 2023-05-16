@@ -11,14 +11,14 @@
     "diff": "cdk diff --path-metadata false --version-reporting false"
   },
   "devDependencies": {
-    "@guardian/cdk": "github:guardian/cdk#aa-riff-raff",
+    "@guardian/cdk": "50.5.0",
     "@guardian/eslint-config-typescript": "1.0.2",
     "@guardian/prettier": "1.0.0",
     "@types/jest": "^27.5.0",
     "@types/node": "18.0.3",
-    "aws-cdk": "2.32.1",
-    "aws-cdk-lib": "2.32.1",
-    "constructs": "10.1.50",
+    "aws-cdk": "2.77.0",
+    "aws-cdk-lib": "2.77.0",
+    "constructs": "10.2.8",
     "eslint": "^8.19.0",
     "jest": "^27.5.1",
     "prettier": "^2.7.1",
